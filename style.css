@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #d2b767;
+ }
+
+.wrapper {
+    width: 370px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+.wrapper header{
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+
+form :where(input,select,button){
+    width: 90%;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+form input{
+    height: 40px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 3px solid #28658d;
+}
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid #d2b767;
+}
+
+form .drop-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drop-list .select-box{
+    display: flex;
+    height: 45px;
+    width: 115px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #28658d;
+}
+
+.select-box select{
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+
+.select-box img{
+    max-width: 30px;
+
+}
