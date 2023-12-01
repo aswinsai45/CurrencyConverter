@@ -1,6 +1,6 @@
 let country_list={
     "AED" : "AE",
-    "AFN" : "AF",
+    "AFN" : "AF", //dictionary[key]=value
     "XCD" : "AG",
     "ALL" : "AL",
     "AMD" : "AM",

@@ -10,7 +10,7 @@ for (let i=0;i<dropList.length;i++){
     for (let currency_code in country_list){
         // Determine if the current option should be selected based on the currency code
         let selectedFrom=i==0 && currency_code=="USD"?"selected" : "";
-        let selectedTo = i == 1 && currency_code == "INR" ? "selected" : "";
+        let selectedTo = i == 1 && currency_code == "INR" ? "selected" : ""; //condition ? expression_if_true : expression_if_false;
 
         // Create an option tag with the currency code and append it to the current dropdown list
         let optionTag = `<option value="${currency_code}" ${selectedFrom} ${selectedTo}>${currency_code}</option>`;
@@ -48,7 +48,7 @@ window.addEventListener("load", () => {
 // Event listener for the form submission to get the exchange rate
 getButton.addEventListener("click",e=>{
     e.preventDefault();
-    getExchangeRate();
+    getExchangeRate(); //clarity needed.
 });
 
 // Selecting the exchange icon and adding an event listener to swap 'from' and 'to' currencies
